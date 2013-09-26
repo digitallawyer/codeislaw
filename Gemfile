@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '4.0.0'
-gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -13,8 +12,14 @@ gem 'less-rails'
 gem 'slim'
 gem 'therubyracer', :platform=>:ruby
 gem 'twitter-bootstrap-rails'
+gem 'rails_12factor', group: :production
+
+group :production do
+  gem 'pg'
+end
 
 group :development do
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'haml-rails'
