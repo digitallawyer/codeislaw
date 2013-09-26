@@ -15,6 +15,7 @@ gem 'twitter-bootstrap-rails'
 gem 'rails_12factor', group: :production
 
 gem 'pg'
+gem 'haml-rails'
 
 group :development do
   gem 'better_errors'
