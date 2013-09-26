@@ -14,12 +14,9 @@ gem 'therubyracer', :platform=>:ruby
 gem 'twitter-bootstrap-rails'
 gem 'rails_12factor', group: :production
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
 
 group :development do
-  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'haml-rails'
